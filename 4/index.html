@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax 4</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	
+	<!--Измените предыдущее значение, чтобы рост задавался с помощью ползунка range.-->
+
+	<form name="form" id="form" method="post" action="http://ajax.markello.info/a3.php">
+		<label>Введите свой пол:</label>
+		<input name="sex" type="radio" value="man"> мужчина
+    	<input name="sex" type="radio" value="woman"> женщина
+    	<br><br>
+    	<label>Введите свой рост в сантиметрах:</label>
+    	<br><br>
+    	<input type="range" min="0" id="r" max="250" step="1" name="height" value="0" oninput="fun1()">
+		<p id="one"></p>
+		<button id="btn" type="submit">Идевльный вес</button> 
+	</form> 
+	<p id="content"></p> 
+	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax 5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	
+	<!--Создайте форму с полями:
+		fio – поле ввода для имени и фамилии;
+		email – поле ввода для email адреса;
+		phone – поле ввода для телефона;
+
+		По нажатию кнопки передайте данные из полей ввода на сервер (mail.php) посредством POST (AJAX).
+		Имена переменных – такие, как указано в списке. Если все сделано верно, 
+		то по адресу указанному в файле mail.php в переменной $to будет отправлено письмо, если нет – выведена ошибка.-->
+
+	<form name="form" id="form" method="post" action="http://ajax.markello.info/mail.php">
+		<p>FIO:</p><input type="text" name="fio">
+		<p>E-mail:</p><input type="text" name="email">
+		<p>Phone:</p><input type="text" name="phone">
+		<br><br>
+		<button id="btn" type="reset">Очистить</button> 
+		<button id="btn" type="submit">Вычислить</button> 		
+	</form> 
+	<p id="content"></p> 
+
+</body>
+</html>

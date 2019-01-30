@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax 6</title>
+
+</head>
+<body>
+
+  	<!--Пошлите на сервер (goods.php) методом GET артикул товара (art). Сервер реагирует только на 2 артикула (1 или 2). 
+		Если все выполнено верно то сервер пришлет вам JSON строку с описанием товара. 
+		После раскодировки (JSON.parse) вы сможете вывести поля:
+			name – имя товара
+			weight – вес товара
+			cost – стоимость товара
+			img – ссылка на картинку.-->
+
+    <form  action="http://ajax.markello.info/goods.php" method="GET" name="form" id="form" >
+    <input name="art" type="number" placeholder="Введите артикул товара">
+    <br><br>
+    <input type="submit" value="Отправить">
+    </form>
+    <p id="content"></p>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

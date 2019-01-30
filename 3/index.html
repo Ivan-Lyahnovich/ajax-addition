@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax 3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	
+	<!--Создайте форму с radiobutton для выбора пола (мужчина или женщина). Добавьте поле для ввода роста (в сантиметрах). 
+		По нажатию кнопки “Идеальный вес”, пошлите запрос на файл a3.php. На сервер передается параметр пол – имя параметра sex, значения man или woman и рост ( имя height). Передача осуществляется методом AJAX, с помощью POST. -->
+
+	<form name="form" id="form" method="post" action="http://ajax.markello.info/a3.php">
+		<label>Введите свой пол:</label>
+		<input name="sex" type="radio" value="man"> мужчина
+    	<input name="sex" type="radio" value="woman"> женщина
+    	<br><br>
+    	<label>Введите свой рост в сантиметрах:</label>
+    	<input name="height" type="text" size="5">	
+		<br><br> 
+		<button id="btn" type="submit">Идеальный вес</button> 
+	</form> 
+	<p id="content"></p> 
+
+</body>
+</html>
